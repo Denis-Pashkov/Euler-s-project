@@ -12,4 +12,5 @@ while (a < 1000):
 print(b)
 
 #out:233168
-#time:0.0009958744049072266 seconds
+#time:0.0009958744049072266
+#memory_usage:18.671875
