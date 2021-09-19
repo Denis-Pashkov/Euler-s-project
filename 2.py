@@ -10,8 +10,7 @@ def sum(a, b):
     return(b, a+b)
 
 while (b <= 4000000):
-    if (b % 2 == 0):
-        i += b
+    i += b
     for j in range(0,3):
         a, b = sum(a, b)
 
