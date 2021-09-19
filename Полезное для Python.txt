@@ -1,0 +1,9 @@
+#Использщование памяти программой
+from memory_profiler import memory_usage
+print(memory_usage())
+
+#Скорость выполнения прграммы
+import time
+start_time = time.time()
+main()
+print("--- %s seconds ---" % (time.time() - start_time))
