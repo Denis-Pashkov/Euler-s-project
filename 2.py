@@ -6,13 +6,10 @@ a = 1
 b = 2
 i = 0
 
-def sum(a, b):
-    return(b, a+b)
-
 while (b <= 4000000):
     i += b
     for j in range(0,3):
-        a, b = sum(a, b)
+        a, b = b, a+b
 
 print(i)
 
