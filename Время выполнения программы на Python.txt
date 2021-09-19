@@ -2,4 +2,4 @@ import time
 
 start_time = time.clock()
 main()
-print time.clock() - start_time, "seconds"
+print (time.clock() - start_time, "seconds")
