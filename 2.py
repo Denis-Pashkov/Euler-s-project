@@ -6,17 +6,13 @@ a = 1
 b = 2
 i = 0
 
-def number():
-    global a
-    global b
-    new_num = a + b
-    a = b
-    b = new_num
+def sum(a, b):
+    return(b, a+b)
 
 while (b <= 4000000):
     if (b % 2 == 0):
         i += b
-    number()
+    a, b = sum(a, b)
 
 print(i)
 
