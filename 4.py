@@ -4,8 +4,8 @@
 
 res = 0
 
-for i in range(100, 1000):
-    for j in range(100, 1000):
+for i in range(999, 99, -1):
+    for j in range(999, 99, -1):
         array_num = i * j
         array_num = str(array_num)
         if (array_num == array_num[::-1]):
