@@ -4,18 +4,12 @@
 
 res = 0
 
-def fun_1(array_num):
-    if (array_num == array_num[::-1]):
-        return(True)
-    else:
-        return(False)
-
 for i in range(100, 1000):
     for j in range(100, 1000):
         array_num = i * j
         array_num = str(array_num)
-        if (fun_1(array_num) == True):
-            array_num = int(array_num)
+        if (array_num == array_num[::-1]):
+            array_num = int(array_num)   
             if (array_num > res):
                 res = array_num
                 break
