@@ -1,15 +1,16 @@
-import math as mt
-i = 1
+i = 2
 num = 600851475143
-simle_factors = []
 
-while(i < num):
-    result = mt.prod(simle_factors)
-    if (result < num):
-        if ((num % i == 0)):
-            simle_factors.append(i)
+while(i <= num):
+    if (num % i == 0):
+        num /= i
+        max_simple_num = i
+        i = 2
     else:
-        break
-    i += 1
+        i += 1
 
-print('Answer: ', simle_factors[-1])
+print(max_simple_num)
+
+#out:6857
+#time:0.002006053924560547
+#memory_usage:18.89453125
