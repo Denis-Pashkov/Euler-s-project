@@ -12,7 +12,6 @@ for i in range(100, 1000):
             array_num = int(array_num)   
             if (array_num > res):
                 res = array_num
-                break
 
 print(res)
 
