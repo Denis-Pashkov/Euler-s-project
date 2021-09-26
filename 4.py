@@ -6,7 +6,6 @@ res = 0
 
 def fun_1(array_num):
     if (array_num == array_num[::-1]):
-        array_num = int(array_num)
         return(True)
     else:
         return(False)
