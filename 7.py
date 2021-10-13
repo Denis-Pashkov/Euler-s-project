@@ -3,18 +3,20 @@
 
 count = 4
 number = 11
+numbers = [2, 3, 5, 7]
 
 while (count != 10001):
-    if (str(number)[-1] in ('1', '3', '7', '9')) and (all(number % n != 0 for n in range(3, (number//2) + 1))):
+    if (str(number)[-1] != ('5')) and (all(number % n != 0 for n in numbers)):
         count += 1
-        if (count == 10001):
-            break
-        else:
+        if (count != 10001):
+            numbers.append(number)
             number += 2
+        else:
+            break
     else:
         number += 2
 
 print(number)
 
 # out:104743
-# time:23.26738929748535
+# time:4.295078754425049
