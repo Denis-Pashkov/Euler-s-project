@@ -9,7 +9,7 @@ i = 0
 while (b <= 4000000):
     i += b
     for j in range(0,3):
-        a, b = b, a+b
+        a, b = b, a + b
 
 print(i)
 
